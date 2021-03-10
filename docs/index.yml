@@ -1,0 +1,32 @@
+openapi: 3.0.0
+servers:
+  - url: https://localhost:7880
+info:
+  version: 0.1.0-beta
+  title: Katheryne Forums
+  description: fetching and parsing data from mihoyo genshin forums
+tags:
+  - name: Forums
+    description: katheryne's forums
+paths:
+  /{id}:
+    $ref: ./paths/index.yml
+  /hot/{id}:
+    $ref: ./paths/hot.yml
+components:
+  responses:
+    400:
+      $ref: ./defs/resps/400.yml
+    404:
+      $ref: ./defs/resps/404.yml
+    500:
+      $ref: ./defs/resps/500.yml
+  schema:
+    Error:
+      $ref: ./defs/error.yml
+    ForumsView:
+      $ref: ./defs/views.yml
+    ForumsCreate:
+      $ref: ./defs/create.yml
+    ForumsPartial:
+      $ref: ./defs/partial.yml

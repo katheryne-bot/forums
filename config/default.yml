@@ -1,0 +1,10 @@
+server:
+  port: 7789
+database:
+  port: 5432
+  type: postgres
+  database: katheryne
+  username: katheryne
+  password: shinobu123
+  entities:
+    - src/entities

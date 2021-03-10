@@ -1,0 +1,46 @@
+{
+  "name": "@katheryne/forums",
+  "version": "0.1.0-beta",
+  "description": "The genshin forums, proxied through katheryne",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node-dev src/index.ts",
+    "test": "echo \\\"Most likely never going test this service...\\\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katheryne-bot/forums.git"
+  },
+  "author": "whoastonic <kingstonicthe1@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/katheryne-bot/forums/issues"
+  },
+  "homepage": "https://github.com/katheryne-bot/forums#readme",
+  "devDependencies": {
+    "@alex-taxiera/eslint-config-ts": "^1.3.2",
+    "@types/node-fetch": "^2.5.8",
+    "@types/zeromq": "^4.6.3",
+    "@typescript-eslint/eslint-plugin": "^4.14.2",
+    "@typescript-eslint/parser": "^4.14.2",
+    "ava": "^3.15.0",
+    "eslint": "^7.19.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-modules-newline": "0.0.6",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^5.0.0",
+    "nyc": "^15.1.0",
+    "ts-node": "^9.1.1",
+    "ts-node-dev": "^1.1.1",
+    "typescript": "^4.1.3"
+  },
+  "dependencies": {
+    "@hqoss/http-client": "^0.1.27-0",
+    "@katheryne/commons": "git+https://github.com/katheryne-bot/commons.git",
+    "@nestjs/microservices": "^7.6.11",
+    "@nestjs/platform-express": "^7.6.11",
+    "pg": "^8.5.1"
+  }
+}
